@@ -9,7 +9,7 @@ public class CreditSceneController : MonoBehaviour
     private void Awake()
     {
         CSM = GameObject.Find("CrossSceneManager").GetComponent<CrossSceneManagement>();
-        animationLength = GameObject.Find("GameObject").GetComponent<Animator>().GetCurrentAnimatorClipInfo(0)[0].clip.length;
+        animationLength = GameObject.Find("SwitchScene").GetComponent<Animator>().GetCurrentAnimatorClipInfo(0)[0].clip.length;
         StartCoroutine(WaitDestroy());
     }
 
