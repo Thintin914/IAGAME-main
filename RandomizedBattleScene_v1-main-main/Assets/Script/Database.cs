@@ -150,7 +150,7 @@ public class Database : MonoBehaviour
 
     public void AddEnemyDetailsToWaitingEnemies(int maxHP, int maxMP, int defense, int dodgeRate, int speed, int attackDamage, Character.Element element, int ID, int wave)
     {
-        waitingEnemies.Add(new Character(maxHP, maxMP, defense, dodgeRate, speed, attackDamage, element, ID, wave));
+        waitingEnemies.Add(new Character(maxHP, maxMP, defense, dodgeRate, speed + Random.Range(-2, 4), attackDamage, element, ID, wave));
     }
 
     public Character.Element GetSkillElement(int ID)
